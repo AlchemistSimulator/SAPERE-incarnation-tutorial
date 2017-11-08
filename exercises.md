@@ -1,10 +1,13 @@
+# HOW-TO
+
+An introduction to simulation and the simulator is provided in the attached slides: `Simulation.pdf`.
 To run the desired example, modify gradle.properties and launch `gradle -Psimulation=THESIMULATIONFILE`, where `THESIMULATIONFILE` must be the name of a valid Alchemist YAML file in `src/main/yaml`. For instance, to launch the first example, use this command:
 
 ``gradle -Psimulation=00-minimal``
 
 If an effects file with the same name of the YAML file is present in the effects folder, it will be loaded automatically.
 
-Using the slides seen during lesson, and relying on the resources provided, try to:
+Try to:
 
 0. Add two nodes to an empty, continuous environment, and make them connected
 0. Create 10000 nodes randomly displaced inside a circle centered in (0,0) and radius 10
@@ -27,3 +30,4 @@ Using the slides seen during lesson, and relying on the resources provided, try 
 0. Take a look to `14-yaml.vars.yml`, and make sure to understand how the variables system works
 0. Take a look to `15-move.yml`, run it and play with its variables
 0. Try to run `16-maps.yml` (note: it can take some time on the first load). Get a glance of the possible complexity of advanced scenario. Discuss the result, modify the example as you like.
+
