@@ -19,7 +19,7 @@ Try to:
 1. Modify the dodgeball program so that it *counts* in the LSA the number of passes
 1. Write an LSA diffusion program: after some time, every node of the network must have the {token} LSA. Use the `*` operator
 1. Look at the `10-math.yml` file. Esperiment with it and try to move nodes around manually.
-1. Write a gradient, it should
+1. Write a gradient, it should:
     1. convert a `{source}` to a `{gradient, 0}` (don't delete the source!)
     1. diffuse to neighbors the gradient, whose value is increased of `#D`
     1. if there are multiple copies of the gradient, keep only the lowest (immediately!)
