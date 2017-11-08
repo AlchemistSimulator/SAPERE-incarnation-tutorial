@@ -1,0 +1,93 @@
+incarnation: sapere
+
+rate: &rate
+  3.16227766017
+
+environment:
+  type: OSMEnvironment
+  parameters: ["/maps/London.osm.pbf", true, false]
+
+positions:
+  type: LatLongPosition
+
+network-model:
+  type: LinkNodesWithinRoutingRange
+  parameters: [400]
+
+send: &grad
+  - time-distribution: *rate
+    type:
+      SAPEREGradient
+    parameters:
+      # Source template
+      - source, Distance
+      #Gradient template
+      - "gradient, Distance, #O"
+      # LSA position where the progress formula result should be stored
+      - 1
+      # Progress formula
+      - "(Distance + (#ROUTE * (K + 1))) +1"
+      # Contextualization LSA
+      - context, K
+      # Threshold: after that, consider it infinite
+      - 20000
+  - program: >
+      {context, K} {sub, N} --> {context, K - N}
+      
+move: &move
+  - time-distribution: *rate
+    type:
+      SAPEREGradient
+    parameters:
+      - source, Distance
+      # Do not clear orientation
+      - gradient, Distance, Dest
+      - 1
+      - "Distance + #ROUTE"
+      # No contextualization required
+      - whatever
+      - 20000
+  - time-distribution:
+      type: DiracComb
+      parameters: [0.02]
+    type: Event
+    actions:
+      - type: SAPEREWalkerRiseGradient
+        parameters: [walker, 1.4, 0, 0, "gradient, Distance, #O", 2]
+
+negativeContextArea: &nctxcontext
+  type: Rectangle
+  parameters: [-0.106320, 51.498157, 0.010, 0.010]
+
+contents: &contents
+  # Must be expressed as X, Y, so lat and long are reversed
+  - in:
+      type: Rectangle
+      parameters: [-0.099, 51.4918, 0.003, 0.003]
+    molecule: source, 0
+  - in:
+      type: Rectangle
+      parameters: [-0.127455, 51.497674, 0.017, 0.01]
+    molecule: context, 5
+  - in: *nctxcontext
+    molecule: context, 0
+  - in: *nctxcontext
+    molecule: sub, 0.9
+
+
+displacements:
+  - in:
+      type: Rectangle
+      parameters: [30, 51.5, -0.134, 0.006, 0.005]
+    programs:
+      - *move
+    contents:
+      - molecule: walker
+  - in:
+      type: Rectangle
+      parameters: [992, 51.49, -0.143, 0.025, 0.079]
+    contents: *contents
+    programs:
+      - *grad
+    
+    
