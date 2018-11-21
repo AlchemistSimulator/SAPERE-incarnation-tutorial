@@ -4,9 +4,7 @@ apply plugin: 'eclipse'
 repositories { mavenCentral() }
 
 dependencies {
-	compile("it.unibo.alchemist:alchemist:$alchemistVersion") {
-		exclude module: 'org.eclipse.xtext.dependencies'
-	}
+	compile("it.unibo.alchemist:alchemist:$alchemistVersion")
 }
 
 task "runAlchemist"(type: JavaExec) {
