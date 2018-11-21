@@ -15,7 +15,7 @@ variables:
   sourceSize: &sourceSize
     formula: $size / 5
 network-model:
-  type: EuclideanDistance
+  type: ConnectWithinDistance
   parameters: [0.5]
 send: &grad
   - time-distribution: *rate

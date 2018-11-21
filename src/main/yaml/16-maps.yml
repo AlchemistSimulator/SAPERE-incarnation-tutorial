@@ -5,10 +5,7 @@ rate: &rate
 
 environment:
   type: OSMEnvironment
-  parameters: ["/maps/London.osm.pbf", true, false]
-
-positions:
-  type: LatLongPosition
+  parameters: ["maps/London.osm.pbf", true, false]
 
 network-model:
   type: LinkNodesWithinRoutingRange
