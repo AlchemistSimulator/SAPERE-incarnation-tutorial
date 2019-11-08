@@ -18,6 +18,8 @@ val alchemistGroup = "Run Alchemist"
  * to be too long for the host OS to be executed.
  */
 val classpathJar by tasks.register<Jar>("classpathJar") {
+    group = alchemistGroup
+    description = "Creates a jar file with a manifest pointing to all the jar resources needed for the runtime"
     appendix = "classpath"
     doFirst {
         manifest {
@@ -46,7 +48,8 @@ File(rootProject.rootDir.path + "/src/main/yaml").listFiles()
             group = alchemistGroup
             description = "Launches simulation ${it.nameWithoutExtension}"
             main = "it.unibo.alchemist.Alchemist"
-            classpath = sourceSets["main"].runtimeClasspath//.filter { it.isDirectory } + classpathJar.outputs.files
+            classpath = sourceSets["main"].runtimeClasspath
+                //.filter { it.isDirectory } + classpathJar.outputs.files // Uncomment to switch to jar-based cp resolution
             args(
                 "-y", it.absolutePath,
                 "-g", "effects/${it.nameWithoutExtension}.aes"
@@ -55,6 +58,6 @@ File(rootProject.rootDir.path + "/src/main/yaml").listFiles()
                 args("-hl", "-t", "10")
             }
         }
-        task.dependsOn(classpathJar)
+        // task.dependsOn(classpathJar) // Uncomment to switch to jar-based cp resolution
         runAll.dependsOn(task)
     }
