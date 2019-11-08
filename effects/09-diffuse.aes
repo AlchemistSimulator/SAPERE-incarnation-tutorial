@@ -2,7 +2,7 @@
   {
     "type": "class it.unibo.alchemist.boundary.gui.effects.DrawShape",
     "curIncarnation": "sapere",
-    "mode": "FillEllipse",
+    "mode": "FILL_ELLIPSE",
     "red": {
       "max": 255,
       "min": 0,
@@ -63,7 +63,7 @@
   {
     "type": "class it.unibo.alchemist.boundary.gui.effects.DrawShape",
     "curIncarnation": "sapere",
-    "mode": "FillEllipse",
+    "mode": "FILL_ELLIPSE",
     "red": {
       "max": 255,
       "min": 0,
@@ -124,7 +124,7 @@
   {
     "type": "class it.unibo.alchemist.boundary.gui.effects.DrawShape",
     "curIncarnation": "sapere",
-    "mode": "FillEllipse",
+    "mode": "FILL_ELLIPSE",
     "red": {
       "max": 255,
       "min": 0,
