@@ -1,4 +1,7 @@
 language: bash
+arch:
+  - amd64
+  - arm64
 os:
   - osx
   - windows
