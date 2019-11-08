@@ -27,7 +27,7 @@ File(rootProject.rootDir.path + "/src/main/yaml").listFiles()
                 "-g", "effects/${it.nameWithoutExtension}.aes"
             )
             if (System.getenv("CI") == "true") {
-                args("-hl", "-t", "200")
+                args("-hl", "-t", "10")
             }
         }
         runAll.dependsOn(task)
