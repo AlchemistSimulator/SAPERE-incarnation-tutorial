@@ -5,7 +5,11 @@ plugins {
 repositories { mavenCentral() }
 
 dependencies {
-	implementation("it.unibo.alchemist:alchemist:+")
+	implementation("it.unibo.alchemist:alchemist:+") {
+        exclude(group = "it.unibo.alchemist", module = "alchemist-incarnation-protelis")
+        exclude(group = "it.unibo.alchemist", module = "alchemist-incarnation-scafi")
+        exclude(group = "it.unibo.alchemist", module = "alchemist-incarnation-biochemistry")
+    }
 }
 
 val alchemistGroup = "Run Alchemist"
@@ -19,7 +23,7 @@ val classpathJar by tasks.register<Jar>("classpathJar") {
         manifest {
             val classpath = sourceSets["main"].runtimeClasspath.files
                 .filter { it.isFile && it.extension == "jar" }
-                .joinToString (separator = " ") { it.absolutePath }
+                .joinToString (separator = " ", prefix = " ") { it.absolutePath }
             attributes("Class-Path" to classpath)
         }
     }
@@ -42,7 +46,7 @@ File(rootProject.rootDir.path + "/src/main/yaml").listFiles()
             group = alchemistGroup
             description = "Launches simulation ${it.nameWithoutExtension}"
             main = "it.unibo.alchemist.Alchemist"
-            classpath = sourceSets["main"].runtimeClasspath.filter { it.isDirectory } + classpathJar.outputs.files
+            classpath = sourceSets["main"].runtimeClasspath//.filter { it.isDirectory } + classpathJar.outputs.files
             args(
                 "-y", it.absolutePath,
                 "-g", "effects/${it.nameWithoutExtension}.aes"
