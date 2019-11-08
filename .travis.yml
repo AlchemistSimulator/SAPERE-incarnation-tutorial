@@ -14,15 +14,11 @@ env:
     - JDK="adopt-openj9@1.11"
     - JDK="adopt@1.12"
     - JDK="adopt-openj9@1.12"
-matrix:
-  exclude:
-    - os: *reference_os
-      env: *reference_jdk
 before_install:
   - curl "${GRAVIS}.install-jdk-travis.sh" --output .install-jdk-travis.sh
   - source .install-jdk-travis.sh
 script:
-  - ./gradlew build
+  - ./gradlew runAll
 before_cache:
   - curl "${GRAVIS}.clean_gradle_cache.sh" --output .clean_gradle_cache.sh
   - bash .clean_gradle_cache.sh

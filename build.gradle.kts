@@ -26,19 +26,9 @@ File(rootProject.rootDir.path + "/src/main/yaml").listFiles()
                 "-y", it.absolutePath,
                 "-g", "effects/${it.nameWithoutExtension}.aes"
             )
+            if (System.getenv("CI") == "true") {
+                args("-hl", "-t", "1000")
+            }
         }
         runAll.dependsOn(task)
     }
-
-// task "runAlchemist"(type: JavaExec) {
-// 	if (project.hasProperty("simulation")) {
-// 		classpath = sourceSets.main.runtimeClasspath
-// 		main = 'it.unibo.alchemist.Alchemist'
-// 		args("-y", "src/main/yaml/${simulation}.yml", "-g", "effects/${simulation}.aes")
-// 	} else {
-// 		println "Simulation unspecified. Use\ngradle runAlchemist -Psimulation=SIMULATIONFILE"
-// 	}
-// }
-// runAlchemist.dependsOn(compileJava)
-// 
-// defaultTasks('runAlchemist')
