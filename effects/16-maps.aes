@@ -124,7 +124,7 @@
   {
     "type": "class it.unibo.alchemist.boundary.gui.effects.DrawShape",
     "curIncarnation": "sapere",
-    "mode": "FillRectangle",
+    "mode": "FILL_RECTANGLE",
     "red": {
       "max": 255,
       "min": 0,
