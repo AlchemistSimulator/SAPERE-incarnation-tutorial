@@ -38,7 +38,7 @@
     "molPropertyFilter": false,
     "property": "",
     "writingPropertyValue": false,
-    "c": "Alpha",
+    "c": "ALPHA",
     "reverse": false,
     "propoom": {
       "max": 10,
@@ -99,7 +99,7 @@
     "molPropertyFilter": false,
     "property": "",
     "writingPropertyValue": false,
-    "c": "Alpha",
+    "c": "ALPHA",
     "reverse": false,
     "propoom": {
       "max": 10,
@@ -160,7 +160,7 @@
     "molPropertyFilter": true,
     "property": "N",
     "writingPropertyValue": false,
-    "c": "Hue",
+    "c": "HUE",
     "reverse": false,
     "propoom": {
       "max": 10,
