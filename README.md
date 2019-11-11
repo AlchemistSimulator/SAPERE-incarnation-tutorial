@@ -1,13 +1,43 @@
-# HOW-TO
+[![Build Status](https://travis-ci.org/DanySK/Course-Simulation-Basics.svg?branch=master)](https://travis-ci.org/DanySK/Course-Simulation-Basics)
 
-An introduction to simulation and the simulator is provided in the attached slides: `Simulation.pdf`.
-To run the desired example, modify gradle.properties and launch `gradle -Psimulation=THESIMULATIONFILE`, where `THESIMULATIONFILE` must be the name of a valid Alchemist YAML file in `src/main/yaml`. For instance, to launch the first example, use this command:
+# Hands-on tutorial with the Alchemist SAPERE incarnation
 
-``gradle -Psimulation=00-minimal``
+The goal of this tutorial is to showcase the usage of Alchemist-SAPERE,
+by a sequence of working examples and increasingly challenging exercises.
 
-If an effects file with the same name of the YAML file is present in the effects folder, it will be loaded automatically.
+Introductory material to the simulation world and to the process that led to the creation of Alchemist
+and of its SAPERE incarnation are provided [here](http://github.com/DanySK/Course-Simulation-Basics/releases/latest/download/Simulation.pdf).
 
-Try to:
+More information on how to write simulations in Alchemist are provided on [the official website](https://alchemistsimulator.github.io)
+
+## Prerequisites
+
+Alchemist requires a working installation of the Java Development Kit 11 or newer to run.
+We do recommend either OpenJDK or OpenJ9 from [AdoptOpenJDK](https://adoptopenjdk.net/)
+Several architectures, operating systems, and JDK versions are tested for compatibility.
+You can access the list of supported configurations by accessing [the latest build on the continuous integration](https://travis-ci.org/DanySK/Course-Simulation-Basics/builds).
+
+## Lanching simulations
+
+The project is managed via the [Gradle Build Tool](https://gradle.org/).
+You do not need to install it, the launch script will download the correct version for you.
+
+In order to launch a simulation named `SIMNAME`,
+a file named `SIMNAME.yml` *must* be in the `src/main/yaml` folder of the project.
+That's where the build script will look up.
+There will be one Gradle task for each simulation file, which can be executed as:
+
+``./gradlew SIMNAME``
+
+If an effects file named `SIMNAME.aes` is present in the `effects` folder, it will be loaded automatically.
+
+**NOTE** the environment variable `CI` is used to determined whether the task is running in a headless continuous integration environment.
+If you have `CI=true` in your environment, the graphical interface won't get pulled up.
+
+## Exercises
+
+Using the provided simulation and the documentation provided on [the SAPERE incarnation page](https://alchemistsimulator.github.io/wiki/usage/sapere/),
+try to solve the following exercises:
 
 1. Add two nodes to an empty, continuous environment, and make them connected
 1. Create 10000 nodes randomly displaced inside a circle centered in (0,0) and radius 10
@@ -30,4 +60,3 @@ Try to:
 1. Take a look to `14-yaml.vars.yml`, and make sure to understand how the variables system works
 1. Take a look to `15-move.yml`, run it and play with its variables
 1. Try to run `16-maps.yml` (note: it can take some time on the first load). Get a glance of the possible complexity of advanced scenario. Discuss the result, modify the example as you like.
-
