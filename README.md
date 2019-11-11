@@ -8,12 +8,12 @@ by a sequence of working examples and increasingly challenging exercises.
 Introductory material to the simulation world and to the process that led to the creation of Alchemist
 and of its SAPERE incarnation are provided [here](http://github.com/DanySK/Course-Simulation-Basics/releases/latest/download/Simulation.pdf).
 
-More information on how to write simulations in Alchemist are provided on [the official website](https://alchemistsimulator.github.io)
+More information on how to write simulations in Alchemist are provided on [the official website](https://alchemistsimulator.github.io).
 
 ## Prerequisites
 
 Alchemist requires a working installation of the Java Development Kit 11 or newer to run.
-We do recommend either OpenJDK or OpenJ9 from [AdoptOpenJDK](https://adoptopenjdk.net/)
+We do recommend either OpenJDK or OpenJ9 from [AdoptOpenJDK](https://adoptopenjdk.net/).
 Several architectures, operating systems, and JDK versions are tested for compatibility.
 You can access the list of supported configurations by accessing [the latest build on the continuous integration](https://travis-ci.org/DanySK/Course-Simulation-Basics/builds).
 
