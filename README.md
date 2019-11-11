@@ -37,6 +37,7 @@ If you have `CI=true` in your environment, the graphical interface won't get pul
 ## Exercises
 
 Using the provided simulation and the documentation provided on [the SAPERE incarnation page](https://alchemistsimulator.github.io/wiki/usage/sapere/),
+and the graphical interface usage description available [here](https://alchemistsimulator.github.io/wiki/usage/gui/),
 try to solve the following exercises:
 
 1. Add two nodes to an empty, continuous environment, and make them connected
