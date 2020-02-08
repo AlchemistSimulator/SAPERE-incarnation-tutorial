@@ -15,8 +15,8 @@ env:
   matrix:
     - JDK="adopt@1.11"
     - JDK="adopt-openj9@1.11"
-    - JDK="adopt@1.12"
-    - JDK="adopt-openj9@1.12"
+    - JDK="adopt"
+    - JDK="adopt-openj9"
 jobs:
   exclude:
     - arch: arm64
@@ -24,7 +24,7 @@ jobs:
     - arch: arm64
       env: JDK="adopt-openj9@1.11"
     - arch: arm64
-      env: JDK="adopt-openj9@1.12"
+      env: JDK="adopt-openj9"
 before_install:
   - curl "${GRAVIS}.install-jdk-travis.sh" --output .install-jdk-travis.sh
   - source .install-jdk-travis.sh
