@@ -5,11 +5,9 @@ plugins {
 repositories { mavenCentral() }
 
 dependencies {
-	implementation("it.unibo.alchemist:alchemist:+") {
-        exclude(group = "it.unibo.alchemist", module = "alchemist-incarnation-protelis")
-        exclude(group = "it.unibo.alchemist", module = "alchemist-incarnation-scafi")
-        exclude(group = "it.unibo.alchemist", module = "alchemist-incarnation-biochemistry")
-    }
+    implementation("it.unibo.alchemist:alchemist:_")
+    implementation("it.unibo.alchemist:alchemist-incarnation-sapere:_")
+    implementation("it.unibo.alchemist:alchemist-swingui:_")
 }
 
 val alchemistGroup = "Run Alchemist"
