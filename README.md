@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/DanySK/Course-Simulation-Basics.svg?branch=master)](https://travis-ci.org/DanySK/Course-Simulation-Basics)
+[![Build Status](https://travis-ci.com/DanySK/Course-Simulation-Basics.svg?branch=master)](https://travis-ci.org/DanySK/Course-Simulation-Basics)
 
 # Hands-on tutorial with the Alchemist SAPERE incarnation
 
