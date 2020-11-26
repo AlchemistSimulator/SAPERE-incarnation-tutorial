@@ -62,4 +62,4 @@ try to solve the following exercises:
 1. Modify the program above by changing the time distribution, using a personalised one: a DiracComb with parameter 0.5
 1. Take a look to `14-yaml.vars.yml`, and make sure to understand how the variables system works
 1. Take a look to `15-move.yml`, run it and play with its variables
-1. Try to run `16-maps.yml` (note: it can take some time on the first load). Get a glance of the possible complexity of advanced scenario. Discuss the result, modify the example as you like.
+1. Try to run `16-maps.yml` (note: it can take some time on the first load). Get a glance of the possible complexity of advanced scenarios. Discuss the result, modify the example as you like.
