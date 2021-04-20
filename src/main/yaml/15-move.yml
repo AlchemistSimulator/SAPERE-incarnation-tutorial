@@ -35,14 +35,14 @@ _send: &grad
   - program: >
       {token, def: N>30, L} -->
       
-move: &move
+_move: &move
   - time-distribution: 0.5
     type: Event
     actions:
       - type: BrownianMove
         parameters: [0.1]
 
-displacements:
+deployments:
   type: Grid
   parameters: [*mSize, *mSize, *size, *size, 0.25, 0.25, 0.1, 0.1]
   contents:
