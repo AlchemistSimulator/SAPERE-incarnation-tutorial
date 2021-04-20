@@ -50,7 +50,7 @@ File(rootProject.rootDir.path + "/src/main/yaml").listFiles()
                 //.filter { it.isDirectory } + classpathJar.outputs.files // Uncomment to switch to jar-based cp resolution
             args(
                 "-y", it.absolutePath,
-                "-g", "effects/${it.nameWithoutExtension}.aes"
+                "-g", "effects/${it.nameWithoutExtension}.json"
             )
             if (System.getenv("CI") == "true") {
                 args("-hl", "-t", "10")
