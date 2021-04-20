@@ -20,7 +20,7 @@ network-model:
   type: ConnectWithinDistance
   parameters: [0.5]
 
-send: &grad
+_send: &grad
   - time-distribution: *rate
     program: "{token, N, L} --> {token, N, L} *{token, N+#D, L add [#NODE;]}"
   - program: >
@@ -43,14 +43,13 @@ move: &move
         parameters: [0.1]
 
 displacements:
-  - in:
-      type: Grid
-      parameters: [*mSize, *mSize, *size, *size, 0.25, 0.25, 0.1, 0.1]
-    contents:
-      - in:
-          type: Rectangle
-          parameters: [*sourceStart, *sourceStart, *sourceSize, *sourceSize]
-        molecule: token, 0, []
-    programs:
-      - *grad
-      - *move
+  type: Grid
+  parameters: [*mSize, *mSize, *size, *size, 0.25, 0.25, 0.1, 0.1]
+  contents:
+    in:
+      type: Rectangle
+      parameters: [*sourceStart, *sourceStart, *sourceSize, *sourceSize]
+    molecule: token, 0, []
+  programs:
+    - *grad
+    - *move
