@@ -1,6 +1,6 @@
 incarnation: sapere
 
-rate: &rate
+_rate: &rate
   3.16227766017
 
 environment:
@@ -52,11 +52,11 @@ _move: &move
       - type: SAPEREWalkerRiseGradient
         parameters: [walker, 1.4, 0, 0, "gradient, Distance, #O", 2]
 
-negativeContextArea: &nctxcontext
+_negativeContextArea: &nctxcontext
   type: Rectangle
   parameters: [-0.106320, 51.498157, 0.010, 0.010]
 
-contents: &contents
+_contents: &contents
   # Must be expressed as X, Y, so lat and long are reversed
   - in:
       type: Rectangle
@@ -72,7 +72,7 @@ contents: &contents
     molecule: sub, 0.9
 
 
-displacements:
+deployments:
   - type: Rectangle
     parameters: [30, 51.5, -0.134, 0.006, 0.005]
     programs: *move
