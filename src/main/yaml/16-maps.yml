@@ -11,7 +11,7 @@ network-model:
   type: LinkNodesWithinRoutingRange
   parameters: [400]
 
-send: &grad
+_send: &grad
   - time-distribution: *rate
     type:
       SAPEREGradient
@@ -31,7 +31,7 @@ send: &grad
   - program: >
       {context, K} {sub, N} --> {context, K - N}
       
-move: &move
+_move: &move
   - time-distribution: *rate
     type:
       SAPEREGradient
@@ -73,18 +73,12 @@ contents: &contents
 
 
 displacements:
-  - in:
-      type: Rectangle
-      parameters: [30, 51.5, -0.134, 0.006, 0.005]
-    programs:
-      - *move
+  - type: Rectangle
+    parameters: [30, 51.5, -0.134, 0.006, 0.005]
+    programs: *move
     contents:
-      - molecule: walker
-  - in:
-      type: Rectangle
-      parameters: [992, 51.49, -0.143, 0.025, 0.079]
+      molecule: walker
+  - type: Rectangle
+    parameters: [992, 51.49, -0.143, 0.025, 0.079]
     contents: *contents
-    programs:
-      - *grad
-    
-    
+    programs: *grad
