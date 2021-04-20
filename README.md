@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/AlchemistSimulator/SAPERE-incarnation-tutorial.svg?branch=master)](https://travis-ci.com/AlchemistSimulator/SAPERE-incarnation-tutorial)
+[![CI](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/actions/workflows/build-and-deploy.yml)
 
 # Hands-on tutorial with the Alchemist SAPERE incarnation
 
@@ -15,7 +15,6 @@ More information on how to write simulations in Alchemist are provided on [the o
 Alchemist requires a working installation of the Java Development Kit 11 or newer to run.
 We do recommend either OpenJDK or OpenJ9 from [AdoptOpenJDK](https://adoptopenjdk.net/).
 Several architectures, operating systems, and JDK versions are tested for compatibility.
-You can access the list of supported configurations by accessing [the latest build on the continuous integration](https://travis-ci.org/DanySK/Course-Simulation-Basics/builds).
 
 ## Lanching simulations
 
@@ -29,7 +28,7 @@ There will be one Gradle task for each simulation file, which can be executed as
 
 ``./gradlew SIMNAME``
 
-If an effects file named `SIMNAME.aes` is present in the `effects` folder, it will be loaded automatically.
+If an effects file named `SIMNAME.json` is present in the `effects` folder, it will be loaded automatically.
 
 **NOTE** the environment variable `CI` is used to determined whether the task is running in a headless continuous integration environment.
 If you have `CI=true` in your environment, the graphical interface won't get pulled up.
