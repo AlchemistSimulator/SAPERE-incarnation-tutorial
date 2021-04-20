@@ -4,7 +4,7 @@ network-model: # Network type description
   type: ConnectWithinDistance # Search a class implementing LinkingRule with this name
   parameters: [5] # Use a constructor that can take a single integer number. Deduce other parameters (if any) from the context.
   
-displacements: # Description of where the nodes should be
+deployments: # Description of where the nodes should be
   - in:
       type: Point # Search a class implementing Displacement with this name
       parameters: [0, 0] # As above: use a constructor requiring only parameters deducible from context and two integers
