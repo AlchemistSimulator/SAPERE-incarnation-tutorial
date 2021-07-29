@@ -1,10 +1,19 @@
-import de.fayard.dependencies.bootstrapRefreshVersionsAndDependencies
+import org.danilopianini.VersionAliases.justAdditionalAliases
 
-rootProject.name = "alchemist-sapere-incarnation-tutorial"
-
-buildscript {
-    repositories { gradlePluginPortal() }
-    dependencies.classpath("de.fayard:dependencies:+")
+plugins {
+    id("de.fayard.refreshVersions") version "0.10.1"
 }
 
-bootstrapRefreshVersionsAndDependencies()
+refreshVersions {
+    extraArtifactVersionKeyRules = justAdditionalAliases
+}
+
+buildscript {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.danilopianini:refreshversions-aliases:+")
+    }
+}
