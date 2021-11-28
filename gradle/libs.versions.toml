@@ -1,0 +1,10 @@
+[versions]
+alchemist = "11.3.1"
+
+[libraries]
+alchemist = { module = "it.unibo.alchemist:alchemist", version.ref = "alchemist" }
+alchemist-sapere = { module = "it.unibo.alchemist:alchemist-incarnation-sapere", version.ref = "alchemist" }
+alchemist-swingui = { module = "it.unibo.alchemist:alchemist-swingui", version.ref = "alchemist" }
+
+[bundles]
+alchemist-sapere-tutorial = ["alchemist", "alchemist-sapere", "alchemist-swingui"]

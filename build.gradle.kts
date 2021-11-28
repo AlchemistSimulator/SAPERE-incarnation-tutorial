@@ -5,9 +5,7 @@ plugins {
 repositories { mavenCentral() }
 
 dependencies {
-    implementation("it.unibo.alchemist:alchemist:_")
-    implementation("it.unibo.alchemist:alchemist-incarnation-sapere:_")
-    implementation("it.unibo.alchemist:alchemist-swingui:_")
+    implementation(libs.bundles.alchemist.sapere.tutorial)
 }
 
 val alchemistGroup = "Run Alchemist"
@@ -45,7 +43,7 @@ File(rootProject.rootDir.path + "/src/main/yaml").listFiles()
         val task by tasks.register<JavaExec>(it.nameWithoutExtension) {
             group = alchemistGroup
             description = "Launches simulation ${it.nameWithoutExtension}"
-            main = "it.unibo.alchemist.Alchemist"
+            mainClass.set("it.unibo.alchemist.Alchemist")
             classpath = sourceSets["main"].runtimeClasspath
                 //.filter { it.isDirectory } + classpathJar.outputs.files // Uncomment to switch to jar-based cp resolution
             args(
