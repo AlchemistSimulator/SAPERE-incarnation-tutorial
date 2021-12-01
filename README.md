@@ -16,6 +16,14 @@ Alchemist requires a working installation of the Java Development Kit 11 or newe
 We do recommend either OpenJDK or OpenJ9 from [AdoptOpenJDK](https://adoptopenjdk.net/).
 Several architectures, operating systems, and JDK versions are tested for compatibility.
 
+### Prerequisites with docker
+
+When running with docker, installing Java Development Kit is not needed.
+Docker and docker-compose are needed in order to run this project in container.
+To run on OS X and Windows machines additional X Window System program will be needed.
+Eg. `xquarts` for OS X and `Xming` for Windows.
+To run run project use `docker-compose up`. Simulation can be specified eg. in `docker-compose.yml` file.
+
 ## Lanching simulations
 
 The project is managed via the [Gradle Build Tool](https://gradle.org/).
