@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  sapere:
+    build: .
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - "./:/opt/app/"
+      - "$HOME/.Xauthority:/root/.Xauthority:rw"
+      - "gradle:/root/.gradle"
+    network_mode: host
+    command: ["06"]
+
+volumes:
+  gradle:
