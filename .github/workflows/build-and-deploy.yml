@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  Build:
+  check-simulations-multiplatform:
     strategy:
       matrix:
         os: [windows, macos, ubuntu]
@@ -29,3 +29,26 @@ jobs:
           check-command: ./gradlew runAll --stacktrace
           should-run-codecov: false
           should-deploy: false
+  build-image:
+    needs:
+      - check-simulations-multiplatform
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+      - name: Build Image
+        run: |
+          IMAGE_NAME='danysk/alchemist-sapere-tutorial'
+          echo docker build -t "$IMAGE_NAME:latest" .
+          docker build -t "$IMAGE_NAME:latest" .
+      - name: Create Release
+        if: >-
+          github.event_name != 'pull_request'
+          && github.repository == 'AlchemistSimulator/SAPERE-incarnation-tutorial'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          DOCKER_USERNAME: danysk
+        run: |
+          npm install
+          npx semantic-release --debug
