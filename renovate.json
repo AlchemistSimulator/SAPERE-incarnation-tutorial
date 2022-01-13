@@ -1,5 +1,5 @@
 {
   "extends": [
-      "github>DanySK/renovate-config"
+      "github>DanySK/renovate-config:docker-image"
   ]
 }
