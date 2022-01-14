@@ -1,5 +1,12 @@
 {
   "extends": [
       "github>DanySK/renovate-config:docker-image"
+  ],
+  "packageRules": [
+    {
+      "description": "Trigger a minor update if Alchemist gets updated",
+      "matchPaths": ["libs.versions.toml"],
+      "semanticCommitScope": "api-deps"
+    }
   ]
 }
