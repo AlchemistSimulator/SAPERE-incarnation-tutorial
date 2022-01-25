@@ -44,9 +44,9 @@ If you have `CI=true` in your environment, the graphical interface won't get pul
 ## Exercises
 
 Using the provided simulation and the documentation provided on [the official Alchemist website](https://alchemistsimulator.github.io/),
-and in particular in [the guide to write YAML simulations](https://alchemistsimulator.github.io/wiki/use/basics/) and
-in [the SAPERE incarnation page](https://alchemistsimulator.github.io/wiki/incarnations/sapere/),
-and the graphical interface usage description available [here](https://alchemistsimulator.github.io/wiki/prepare/default-gui/),
+and in particular in [reference guide to the YAML simulations](https://alchemistsimulator.github.io/reference/yaml/) and
+in [the SAPERE incarnation reference](https://alchemistsimulator.github.io/https://alchemistsimulator.github.io/reference/sapere/),
+and the graphical interface usage description available [here](https://alchemistsimulator.github.io/reference/default-ui/),
 try to solve the following exercises:
 
 1. Add two nodes to an empty, continuous environment, and make them connected
