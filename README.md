@@ -45,7 +45,7 @@ If you have `CI=true` in your environment, the graphical interface won't get pul
 
 Using the provided simulation and the documentation provided on [the official Alchemist website](https://alchemistsimulator.github.io/),
 and in particular in [reference guide to the YAML simulations](https://alchemistsimulator.github.io/reference/yaml/) and
-in [the SAPERE incarnation reference](https://alchemistsimulator.github.io/https://alchemistsimulator.github.io/reference/sapere/),
+in [the SAPERE incarnation reference](https://alchemistsimulator.github.io/reference/sapere/),
 and the graphical interface usage description available [here](https://alchemistsimulator.github.io/reference/default-ui/),
 try to solve the following exercises:
 
