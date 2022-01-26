@@ -1,3 +1,16 @@
+## [1.4.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.3.0...1.4.0) (2022-01-26)
+
+
+### Documentation
+
+* **readme:** fix broken link ([32988e2](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/32988e2fff4a8ef43ef0219131502c8f2d94e908))
+* **readme:** fix dangling links ([f43618e](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/f43618e8ef4f26d623c648f3dae21b165df4222b))
+
+
+### Dependency updates
+
+* **api-deps:** update it.unibo.alchemist to v12.2.6 ([dae3f68](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/dae3f68c7edef4c83ddf3d4508d9c2c3ea1f510f))
+
 ## [1.3.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.2.0...1.3.0) (2022-01-23)
 
 
