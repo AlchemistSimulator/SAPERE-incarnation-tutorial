@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.4.0...1.5.0) (2022-01-27)
+
+
+### Dependency updates
+
+* **api-deps:** update it.unibo.alchemist to v12.2.7 ([4e1fbb3](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/4e1fbb34b8980f86e434e3fb0c83d526cfd7c8e2))
+
 ## [1.4.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.3.0...1.4.0) (2022-01-26)
 
 
