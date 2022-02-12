@@ -1,3 +1,14 @@
+## [1.10.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.9.0...1.10.0) (2022-02-12)
+
+
+### Dependency updates
+
+* **api-deps:** update it.unibo.alchemist to v13 ([ebcfe53](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/ebcfe53193d0205e14dfaaedc1679dd912fc9f93))
+* **deps:** update dependency gradle to v7.4 ([8739a90](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/8739a90e1fa7b206dc975309958dc05c19b63344))
+* **deps:** update dependency node-fetch to 2.6.7 [security] ([aa093b4](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/aa093b4a45edb2b1fc2792f504d419c399ccd530))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.5 ([e98dca3](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/e98dca34b106cde0db2beb2a5e28ad2d51660468))
+* **deps:** update node.js to 16.14 ([811f19c](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/811f19cb3430207ca6a0c47886236fdb803e641a))
+
 ## [1.9.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.8.0...1.9.0) (2022-02-08)
 
 
