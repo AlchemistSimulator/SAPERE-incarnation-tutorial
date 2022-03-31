@@ -1,3 +1,10 @@
+### [1.19.1](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.19.0...1.19.1) (2022-03-31)
+
+
+### Bug Fixes
+
+* **container:** mount dependencies generated in CI ([9a1d05d](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/9a1d05d77df83832aaac43a86c9e4ea36aad2503))
+
 ## [1.19.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.18.0...1.19.0) (2022-03-30)
 
 
