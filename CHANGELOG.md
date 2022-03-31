@@ -1,3 +1,12 @@
+## [1.20.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.19.1...1.20.0) (2022-03-31)
+
+
+### Dependency updates
+
+* **api-deps:** update it.unibo.alchemist to v15 ([39fa77c](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/39fa77ce2a022798f592dad2e250d6012af6bf12))
+* **core-deps:** update dependency eclipse-temurin to v18 ([b0323fb](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/b0323fbd016f276972e1cfb021cdc07f8f538397))
+* **deps:** update dependency gradle to v7.4.2 ([aef2c3b](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/aef2c3b165f226f72cde6f54c53c2d4d3bff01aa))
+
 ### [1.19.1](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.19.0...1.19.1) (2022-03-31)
 
 
