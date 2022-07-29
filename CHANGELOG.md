@@ -1,3 +1,10 @@
+## [1.53.1](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.53.0...1.53.1) (2022-07-29)
+
+
+### Bug Fixes
+
+* **api-deps:** update alchemist to v24.1.2 ([b11aa23](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/b11aa23a79cfce2b3a2d3aa27ac85d002f3d09d6))
+
 ## [1.53.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.52.0...1.53.0) (2022-07-27)
 
 
