@@ -1,3 +1,20 @@
+## [1.59.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.58.0...1.59.0) (2022-09-03)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.4 ([22f6e77](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/22f6e77c98e4bfcff51128b0e71045d8773f0b38))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.5 ([eef1aeb](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/eef1aeb269af18f4d72c63eeb1b56aa690443a61))
+
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v24.1.8 ([97cafb1](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/97cafb18fc1bf161cca9def5710afe3800292413))
+* **api-deps:** update alchemist to v24.1.9 ([06ef8b2](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/06ef8b2f14d325009aac78db93162f619d060622))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.10 ([3aa95a4](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/3aa95a41ca218aa851a83299816e5fda8921e073))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.11 ([ceea9ac](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/ceea9ac17a9ce82dba4c2549c24b4c00bf68f0ba))
+* **deps:** update node.js to 16.17 ([761eeeb](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/761eeeb9d300cb691b655d7bad5c917159550990))
+
 ## [1.58.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.57.0...1.58.0) (2022-08-08)
 
 
