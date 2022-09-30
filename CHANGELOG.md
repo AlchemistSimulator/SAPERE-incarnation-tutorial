@@ -1,3 +1,19 @@
+## [1.59.1](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.59.0...1.59.1) (2022-09-30)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/action-checkout action to v0.2.2 ([b2f5dc6](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/b2f5dc6c2018cca40c32a0acd2a5d679e9c7b8d7))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.6 ([f628303](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/f628303f0a428abfc913cd0936619ab3140cfe84))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.7 ([e7b901a](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/e7b901a7179a0d73055d4c0c05ac3b9f5deded26))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.8 ([de0b07a](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/de0b07a06a3f46e9ca0d820eaa415570f08fba2b))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.9 ([1225e65](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/1225e65ddd57419dbe5aa974d378aa5a38f65b44))
+
+
+### Dependency updates
+
+* **core-deps:** update eclipse-temurin docker tag to v19 ([f876774](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/f8767743c8cd25c6780d6017ad717a66f4a5a55b))
+
 ## [1.59.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.58.0...1.59.0) (2022-09-03)
 
 
