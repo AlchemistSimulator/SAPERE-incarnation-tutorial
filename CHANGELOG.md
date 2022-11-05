@@ -1,3 +1,23 @@
+## [1.62.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.61.0...1.62.0) (2022-11-05)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.11 ([555af12](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/555af12ce442f06ea805baaf4301ebbead4c3bbe))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.12 ([236e18d](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/236e18d8f2121a7e7925720c8a35072267ecd040))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.13 ([2154b8f](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/2154b8f821438fc3fca9c8a98d071c82e59acfe1))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.14 ([eea4af3](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/eea4af39d8f6bddc622db4528914d658cc82b8cd))
+
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v24.1.12 ([a9858b0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/a9858b0fc7478f65bd3699749cf22b65ceb55d4c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.13 ([24d4192](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/24d4192759080ffbdbf7439887a32b3fdeae9da4))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.14 ([b6e983b](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/b6e983b1e8a31097637b92286d101fe2f1068ef8))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.15 ([0c9a674](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/0c9a6744811b580f285f89a11496e42d36318a3e))
+* **deps:** update node.js to 18.12 ([eb8687b](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/eb8687bde5e7e50daa98ed6995056f195aef589f))
+* **deps:** update node.js to v18 ([5a4995b](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/5a4995b67eda752c567b38601a23ea6d7ea054f3))
+
 ## [1.61.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.60.0...1.61.0) (2022-10-17)
 
 
