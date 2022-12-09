@@ -1,3 +1,10 @@
+## [1.67.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.66.0...1.67.0) (2022-12-09)
+
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v25 ([17e6aef](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/17e6aef39e6595d1a93037b56de768d7d5dd4565))
+
 ## [1.66.0](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.65.0...1.66.0) (2022-12-09)
 
 
