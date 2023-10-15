@@ -1,4 +1,4 @@
-FROM eclipse-temurin:19
+FROM eclipse-temurin:21
 
 RUN mkdir -p /opt/app
 COPY . /opt/app
