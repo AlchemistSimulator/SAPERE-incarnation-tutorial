@@ -57,3 +57,16 @@ jobs:
         run: |
           npm install
           npx semantic-release --debug
+  success:
+    runs-on: ubuntu-22.04
+    needs:
+      - check-simulations-multiplatform
+      - build-image
+    if: >-
+      always() && (
+        contains(join(needs.*.result, ','), 'failure')
+        || !contains(join(needs.*.result, ','), 'cancelled')
+      )
+    steps:
+      - name: Verify that there were no failures
+        run: ${{ !contains(join(needs.*.result, ','), 'failure') }}
