@@ -1,3 +1,5 @@
+import java.awt.GraphicsEnvironment
+
 plugins {
     java
 }
@@ -33,6 +35,7 @@ val runAll by tasks.register<DefaultTask>("runAll") {
     group = alchemistGroup
     description = "Launches all simulations"
 }
+val isInCI = System.getenv("CI") == "true"
 /*
  * Scan the folder with the simulation files, and create a task for each one of them.
  */
@@ -45,13 +48,25 @@ File(rootProject.rootDir.path + "/src/main/yaml").listFiles()
             description = "Launches simulation ${it.nameWithoutExtension}"
             mainClass.set("it.unibo.alchemist.Alchemist")
             classpath = sourceSets["main"].runtimeClasspath
-                //.filter { it.isDirectory } + classpathJar.outputs.files // Uncomment to switch to jar-based cp resolution
-            args(
-                "-y", it.absolutePath,
-                "-g", "effects/${it.nameWithoutExtension}.json"
-            )
-            if (System.getenv("CI") == "true") {
-                args("-hl", "-t", "10")
+            args("run", it.absolutePath)
+            // checks if the environment is headless
+            if (!(GraphicsEnvironment.isHeadless() || isInCI)) {
+                args(
+                    "--override",
+                    """
+                    monitors: 
+                        type: SwingGUI
+                        parameters: 
+                            graphics: effects/${it.nameWithoutExtension}.json
+                            failOnHeadless: true
+                    launcher: 
+                        parameters:
+                            auto-start: $isInCI
+                    """.trimIndent()
+                )
+            }
+            if (isInCI) {
+                args("--override", "terminate: { type: AfterTime, parameters: 10 }")
             }
         }
         // task.dependsOn(classpathJar) // Uncomment to switch to jar-based cp resolution
