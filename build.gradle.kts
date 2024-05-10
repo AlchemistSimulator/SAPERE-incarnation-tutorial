@@ -4,6 +4,18 @@ plugins {
     java
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(
+            file("Dockerfile")
+                .readLines()
+                .first { it.contains("FROM") }
+                .substringAfter("eclipse-temurin:")
+                .toInt()
+        )
+    }
+}
+
 repositories { mavenCentral() }
 
 dependencies {
