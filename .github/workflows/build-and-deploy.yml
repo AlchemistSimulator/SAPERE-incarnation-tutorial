@@ -35,6 +35,8 @@ jobs:
           should-run-codecov: false
           should-deploy: false
   build-image:
+    permissions: 
+      contents: write
     needs:
       - check-simulations-multiplatform
     runs-on: ubuntu-latest
