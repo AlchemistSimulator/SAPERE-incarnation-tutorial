@@ -16,7 +16,7 @@ on:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ !contains(github.ref, 'master') }}
 
 jobs:
   check-simulations-multiplatform:
