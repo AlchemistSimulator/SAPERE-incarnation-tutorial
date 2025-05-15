@@ -1,3 +1,13 @@
+## [1.106.3](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.106.2...1.106.3) (2025-05-15)
+
+### Documentation
+
+* improve the readme ([c59498a](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/c59498af14cca8b4d9711390255368bce060ba55))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.19 ([#733](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/issues/733)) ([3875a80](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/commit/3875a8067105b1f0a58637c55c2acccae4517f4c))
+
 ## [1.106.2](https://github.com/AlchemistSimulator/SAPERE-incarnation-tutorial/compare/1.106.1...1.106.2) (2025-05-15)
 
 ### Dependency updates
