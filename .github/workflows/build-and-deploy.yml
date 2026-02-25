@@ -50,10 +50,11 @@ jobs:
           IMAGE_NAME='danysk/alchemist-sapere-tutorial'
           echo docker build -t "$IMAGE_NAME:latest" .
           docker build -t "$IMAGE_NAME:latest" .
+      - name: Install Node
+        uses: actions/setup-node@v6.2.0
+        with:
+          node-version-file: package.json
       - name: Create Release
-        if: >-
-          github.event_name != 'pull_request'
-          && github.repository == 'AlchemistSimulator/SAPERE-incarnation-tutorial'
         env:
           GITHUB_TOKEN: ${{ github.token }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
